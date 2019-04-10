@@ -13,7 +13,7 @@ class Sale extends Model
  
     protected $fillable = ['client_id', 'total'];
  
-     public $timestamps = true; //Para tener la fecha y hora de la realización de la venta
+     public $timestamps = false;
  
  
     /*public function detail(){

@@ -11,6 +11,8 @@ class Client extends Model
     protected $primaryKey = 'id_client';
  
     protected $fillable = ['name','last_name'];
+
+    public $timestamps = false;
  
     //Relación para obtener las ventas realizadas hacia cada cliente
     public function sale(){

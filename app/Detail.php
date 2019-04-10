@@ -12,7 +12,8 @@ class Detail extends Model
  
     protected $fillable = ['product_id','quantity','price','sub_total', 'sale_id'];
  
- 
+    public $timestamps = false;
+    
     //Relación para acceder a los productos a través del detalle
     public function product(){
         return $this->belongsTo('App\Product', 'product_id', 'id_product');
